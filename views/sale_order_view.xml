@@ -1,0 +1,17 @@
+<odoo>
+    <record id="view_order_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <sheet>
+                <group>
+                    <field name="api_order_number"/>
+                    <field name="api_first_name"/>
+                    <field name="api_last_name"/>
+                    <field name="api_kilometers"/>
+                </group>
+            </sheet>
+        </field>
+    </record>
+</odoo>
